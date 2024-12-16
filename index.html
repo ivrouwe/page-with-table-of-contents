@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Page with Table of Contents</title>
+</head>
+
+<body>
+    <main>
+        <h1>Page with Table of Contents</h1>
+
+        <nav
+            id="nav--table-of-contents"
+            aria-labelledby="table-of-contents"
+            is="disclosure-show-hide-nav-element"
+            data-expanded="true"
+        >
+            <h2
+                id="table-of-contents"
+                tabindex="-1"
+            >Table of Contents</h2>
+
+            <ol>
+                <li>
+                    <a href="#section-a">Section A</a>
+                </li>
+
+                <li>
+                    <a href="#section-b">Section B</a>
+
+                    <ol>
+                        <li>
+                            <a href="#child-section-1">Child Section 1</a>
+                        </li>
+
+                        <li>
+                            <a href="#child-section-2">Child Section 2</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <a href="#section-c">Section C</a>
+                </li>
+            </ol>
+        </nav>
+
+        <section
+            id="section--section-a"
+            aria-labelledby="section-a"
+        >
+            <h2
+                id="section-a"
+                tabindex="-1"
+            >Section A</h2>
+
+            <p>Some content.</p>
+
+            <ul>
+                <li>Additional content.</li>
+
+                <li>In a list.</li>
+            </ul>
+        </section>
+
+        <section
+            id="section--section-b"
+            aria-labelledby="section-b"
+        >
+            <h2
+                id="section-b"
+                tabindex="-1"
+            >Section B</h2>
+
+            <p>More content (content that pertains to this section).</p>
+
+            <ul>
+                <li>More relevant content.</li>
+
+                <li>Additional relevant content as well.</li>
+            </ul>
+
+            <section
+                id="section--child-section-1"
+                aria-labelledby="child-section-1"
+            >
+                <h3
+                    id="child-section-1"
+                    tabindex="-1"
+                >Child Section 1</h3>
+
+                <p>Some additional content.</p>
+            </section>
+
+            <section
+                id="section--child-section-2"
+                aria-labelledby="child-section-2"
+            >
+                <h3
+                    id="child-section-2"
+                    tabindex="-1"
+                >Child Section 2</h3>
+
+                <p>Further additional content.</p>
+            </section>
+        </section>
+
+        <section
+            id="section--section-c"
+            aria-labelledby="section-c"
+        >
+            <h2
+                id="section-c"
+                tabindex="-1"
+            >Section C</h2>
+
+            <p>Section C -related content.</p>
+        </section>
+    </main>
+
+    <!-- A local copy of [WebReflection/custom-elements-builtin](https://github.com/WebReflection/custom-elements-builtin) -->
+    <script src="assets/js/webreflection-custom-elements-builtin-safari-polyfill.js"></script>
+
+    <script src="assets/js/custom-element-helpers.js"></script>
+
+    <script src="assets/js/disclosure-show-hide-nav-element.js"></script>
+</body>
+</html>
